@@ -1,10 +1,4 @@
----
-title: "Hyperfocus"
-draft: false
-menu: "main"
----
-
-### Problem
+# SOLVING HYPERFOCUS
 
 Actually there are many different causes and medical reasons for hyperfocus and anything related to it like ADHD and ASD, but for me there are 4 main problems that definitely affect my life in a bad way:
 
