@@ -5,3 +5,4 @@
 
 - [Basic operations with angles](basic_operations_with_angles/basic_operations_with_angles.ipynb)
 - [Generating Pythagorean Triples](generating_pythagorean_triples/generating_pythagorean_triples.ipynb)
+- [Hyperfocus](hyperfocus/hyperfocus.md)
