@@ -7,4 +7,5 @@
 - [Fire department missions](fire_department_missions/missions.ipynb)
 - [Generating Pythagorean Triples](generating_pythagorean_triples/generating_pythagorean_triples.ipynb)
 - [Predict number of divisors](predict_number_of_divisors/predict_number_of_divisors.ipynb)
+- [Sieve of Eratosthenes](sieve_of_eratosthenes/sieve_of_eratosthenes.ipynb)
 - [Solving Hyperfocus](solving_hyperfocus/solving_hyperfocus.md)
