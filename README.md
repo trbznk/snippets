@@ -9,4 +9,5 @@
 - [img2pimg](img2pimg/)
 - [ppipeline](ppipeline/)
 - [Predict number of divisors](predict_number_of_divisors/predict_number_of_divisors.ipynb)
+- [seqsyn](seqsyn/seqsyn.ipynb)
 - [Sieve of Eratosthenes](sieve_of_eratosthenes/sieve_of_eratosthenes.ipynb)
