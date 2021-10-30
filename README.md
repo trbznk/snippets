@@ -1,7 +1,7 @@
 <p align="center"><img width="200" src="https://upload.wikimedia.org/wikipedia/commons/7/70/RightBrainDominant.jpg"></p>
 <h1 align="center">SNIPPETS</h1>
 
-### TABLE OF CONTENTS
+## Table of contents
 
 - [Autocorrelation Function](acf/acf.ipynb)
 - [Autoregressive Model](ar_model/ar_model.ipynb)
@@ -23,3 +23,7 @@
 - [Simple Exponential Smoothing](ses/ses.ipynb)
 - [Sieve of Eratosthenes](sieve_of_eratosthenes/sieve_of_eratosthenes.ipynb)
 - [Tensorflow Base Template](tensorflow_base_template/tensorflow_base_template.ipynb)
+
+## TODO
+
+- [ ] Finish tabular_series_07
