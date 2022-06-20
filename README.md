@@ -26,4 +26,4 @@
 
 ## TODO
 
-- [ ] Finish tabular_series_07
+- [ ] Implement auto generation of "Table of Contents"
