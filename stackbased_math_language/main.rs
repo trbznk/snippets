@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 fn str_is_number(s: &str) -> bool {
     match s.parse::<f64>() {
         Ok(..)  => true,
@@ -31,15 +33,28 @@ enum Word {
 
 #[derive(Debug)]
 struct Prog {
-    stack: Vec<Word>
+    stack: Vec<Word>,
+    reg: HashMap<String, Word>
 }
 
 impl Prog {
     fn new() -> Prog {
-        Prog { stack: vec!() }
+        Prog {
+            stack: vec!(),
+            reg: HashMap::new()
+        }
+    }
+    
+    fn preprocess(&mut self, input: &str) {
+
+
+
+
+        // todo!();
     }
 
     fn run(&mut self, input: &str) {
+        self.preprocess(input);
         for lexeme in input.split_whitespace() {
             if str_is_number(lexeme) {
                 self.stack.push(Word::Number(Number { value: lexeme.parse().unwrap() }));
@@ -74,6 +89,16 @@ impl Prog {
                 let a = self.stack.pop().expect("Stack underflow");
                 self.stack.push(a.clone());
                 self.stack.push(a.clone());
+            } else if lexeme.starts_with("@") {
+                if lexeme.len() == 1 {
+                    panic!("Syntax Error");
+                }
+                let a = self.stack.pop().expect("Stack underflow");
+                let var_name = lexeme.strip_prefix("@").unwrap();
+                self.reg.insert(var_name.to_string(), a);
+            } else if self.reg.contains_key(lexeme) {
+                let a = self.reg.get(lexeme).unwrap();
+                self.stack.push((*a).clone());
             } else {
                 panic!("Unknown word");
             }
@@ -82,7 +107,7 @@ impl Prog {
 }
 
 fn main() {
-    let input = "1 2 3 dup";
+    let input = "3 @a 2 a +";
     println!("'{}'", input);
     let mut prog = Prog::new();
     prog.run(input);
