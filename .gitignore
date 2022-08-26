@@ -3,5 +3,6 @@
 */.ipynb_checkpoints/*
 .DS_Store
 *.pyc
-
+*.lock
 schlagzeilen/generate_data.py
+*.out
